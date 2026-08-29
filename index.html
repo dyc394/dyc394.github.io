@@ -1,240 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daniel Chen — Electrical & Computer Engineering student portfolio." />
-  <title>Daniel Chen | ECE Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="#top">Daniel Chen</a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daniel Chen — Electrical & Computer Engineering student portfolio focused on semiconductor manufacturing, embedded systems, hardware, and engineering research."
+    />
+    <title>Daniel Chen | ECE Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="#top">Daniel Chen</a>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-content">
-        <p class="eyebrow">Electrical & Computer Engineering · UT Austin</p>
-        <h1>Daniel Chen</h1>
-        <p class="hero-copy">
-          I’m an Electrical and Computer Engineering student interested in semiconductor
-          manufacturing, nanoelectronics, hardware design, and developing practical engineering systems.
-        </p>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          Menu
+        </button>
 
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View Projects</a>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-          <!-- Replace resume.pdf with your actual resume file name after uploading it to GitHub -->
-          <a class="button" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <main id="top">
+      <section class="hero section" data-reveal>
+        <div class="hero-content">
+          <p class="eyebrow">Electrical &amp; Computer Engineering @ UT Austin</p>
+          <h1>Daniel Chen</h1>
+          <p class="hero-copy">
+            Third-year Electrical and Computer Engineering student.
+          </p>
 
-          <!-- Replace the URL below with your LinkedIn profile -->
-          <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-
-          <!-- Replace the URL below with your GitHub profile -->
-          <a class="button" href="https://github.com/dyc394" target="_blank" rel="noopener">GitHub</a>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="Daniel%20Chen%20-%20Resume%20(2).pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/danielchen05" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/dyc394" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Engineering across hardware, software, and manufacturing.</h2>
-      </div>
-      <div class="about-grid">
-        <p>
-          I am an Electrical and Computer Engineering student at The University of Texas at Austin
-          with experience in undergraduate engineering research, hardware design, programming,
-          and student leadership.
-        </p>
-        <p>
-          I enjoy multidisciplinary problems that connect electronics, manufacturing, software,
-          and physical systems, especially work related to semiconductor manufacturing and nanoelectronics.
-        </p>
-      </div>
-    </section>
+      <section id="about" class="section about-section" data-reveal>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">About</p>
+          <h2>Academic summary</h2>
+        </div>
 
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Projects</h2>
-        <p>Technical work, research, and systems I have built or improved.</p>
-      </div>
-
-      <div class="project-grid">
-        <!-- PROJECT CARD: duplicate this entire article block to add another project -->
-        <article class="project-card">
-          <!-- Add an image later by replacing this div with:
-          <img class="project-image" src="images/your-image.jpg" alt="Description of project image">
-          -->
-          <div class="project-placeholder">Add research photo / setup image</div>
-          <div class="project-body">
-            <h3>Nanomanufacturing Research</h3>
-            <p>
-              Undergraduate research involving optical systems, additive manufacturing,
-              experimental hardware, and electrical characterization.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>LabVIEW</span><span>Optics</span>
-              <span>Electrical Characterization</span><span>Experimental Design</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-placeholder">Add CAD render / hardware image</div>
-          <div class="project-body">
-            <h3>Camera Housing & Hardware Design</h3>
-            <p>
-              Designed custom CAD housings and mounting hardware for board-level imaging systems
-              while working around mechanical and thermal constraints.
-            </p>
-            <div class="tags">
-              <span>CAD</span><span>Onshape</span><span>Mechanical Design</span>
-              <span>Prototyping</span><span>Hardware Integration</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-placeholder">Add timing diagram / system photo</div>
-          <div class="project-body">
-            <h3>Automated Laser Shutter Control</h3>
-            <p>
-              Developed Python-based control for synchronized optical shutters used in
-              experimental nanomanufacturing setups.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>Hardware Control</span>
-              <span>Timing Systems</span><span>Automation</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-placeholder">Add workflow / dashboard screenshot</div>
-          <div class="project-body">
-            <h3>Corporate Outreach Automation</h3>
-            <p>
-              Rebuilt the Student Engineering Council corporate outreach process and created
-              systems for managing and contacting hundreds of companies efficiently.
-            </p>
-            <div class="tags">
-              <span>Google Sheets</span><span>Apps Script</span>
-              <span>AI Tools</span><span>Automation</span><span>Leadership</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Background</p>
-        <h2>Experience</h2>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item">
-          <div>
-            <h3>Undergraduate Research Assistant</h3>
-            <p class="org">Nanomanufacturing / Engineering Research Lab · The University of Texas at Austin</p>
-          </div>
-          <p class="date">2026 – Present</p>
-          <p class="description">
-            Contribute to experimental engineering work involving optical systems, automation,
-            electrical characterization, and custom hardware.
+        <div class="about-grid">
+          <p>
+            I am a third-year Electrical and Computer Engineering student, specializing in nanotechnology and nanoelectronics at The University of Texas at Austin.
           </p>
-        </article>
-
-        <article class="timeline-item">
-          <div>
-            <h3>Corporate Chair</h3>
-            <p class="org">Student Engineering Council · The University of Texas at Austin</p>
-          </div>
-          <p class="date">2026 – Present</p>
-          <p class="description">
-            Lead corporate outreach, sponsorship strategy, and systems that improve communication
-            with industry partners.
+          <p>
+            My work spans research software, embedded development, hardware design, and technical problem-solving across
+            experimental and production-oriented environments.
           </p>
-        </article>
+        </div>
+      </section>
 
-        <article class="timeline-item">
-          <div>
-            <h3>Logistics Junior Director</h3>
-            <p class="org">MIS Association · The University of Texas at Austin</p>
-          </div>
-          <p class="date">2026</p>
-          <p class="description">
-            Supported event logistics, coordination, and execution for student organization programming.
+      <section id="projects" class="section projects-section" data-reveal>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span class="section-number">01</span> Projects</p>
+          <h2>Selected Work</h2>
+        </div>
+
+        <div class="project-stack">
+          <article class="project-card feature-project case-study case-study-left" data-reveal>
+            <div class="project-media neutral-media shutter-gallery">
+              <div class="project-image-stack">
+                <figure class="project-image-figure">
+                  <img src="images/shutter_software/shutter%20.png" alt="Optical shutter control hardware and setup" />
+                </figure>
+                <figure class="project-image-figure">
+                  <img src="images/shutter_software/live%20latency%20graph%20expanded.png" alt="Expanded latency timing plot showing microsecond-scale control" />
+                </figure>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-kicker">Research + hardware/software integration</div>
+              <h3>Precision Optical Shutter Control</h3>
+              <p class="project-subtitle">Nanomanufacturing Research Software</p>
+              <p>
+                Developed and tested a Python interface for controlling optical shutters used in an experimental
+                nanomanufacturing system.
+              </p>
+              <p class="result-line">
+                <strong>Result:</strong> Achieved greater than 99% reduction in timing error and enabled microsecond-level
+                timing accuracy compared with manual operation.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Hardware Control</span>
+                <span>Optical Systems</span>
+                <span>Automation</span>
+                <span>Timing Systems</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card feature-project case-study case-study-right">
+            <div class="project-media video-panel">
+              <div class="video-embed-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/q4pYVbDSQ30"
+                  title="Embedded Pong Game demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="pong-support-image">
+                <img src="images/embedded_systems_pong/pong_game_preview.png" alt="Embedded Pong game preview on hardware" />
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-kicker">Embedded systems</div>
+              <h3>Embedded Pong Game</h3>
+              <p class="project-subtitle">Bare-Metal Embedded Systems Project</p>
+              <p>
+                Built a Pong-style game in C running directly on an MSPM0G3507 microcontroller.
+              </p>
+              <ul class="project-list">
+                <li>Bare-metal C implementation</li>
+                <li>MSPM0G3507 microcontroller</li>
+                <li>Dual-ball gameplay</li>
+                <li>Collision detection</li>
+                <li>Slide potentiometer for player input</li>
+                <li>Optimized for an 80 MHz microcontroller</li>
+                <li>Smooth animation under constrained hardware</li>
+                <li>Multilingual user interface</li>
+                <li>No operating system</li>
+                <li>Demonstrated to 100+ peers</li>
+              </ul>
+              <div class="tags">
+                <span>C</span>
+                <span>Embedded Systems</span>
+                <span>MSPM0G3507</span>
+                <span>GPIO</span>
+                <span>Microcontrollers</span>
+                <span>Collision Detection</span>
+              </div>
+              <div class="project-actions">
+                <a class="button primary" href="https://youtu.be/q4pYVbDSQ30?si=w7fDRtshrCjm0u08" target="_blank" rel="noopener">Watch Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card feature-project case-study case-study-cad" data-reveal>
+            <div class="project-media gallery-layout image-gallery">
+              <figure class="project-image-figure project-image-feature">
+                <img src="images/Camera-Housing/CAD_DESIGN_DMM.jpg" alt="Board-level camera housing CAD render" />
+              </figure>
+              <figure class="project-image-figure">
+                <img src="images/Camera-Housing/CAD_DESIGN_ALVIUM.jpg" alt="Camera housing design from an alternate CAD view" />
+              </figure>
+            </div>
+
+            <div class="project-content">
+              <div class="project-kicker">CAD + hardware design</div>
+              <h3>Board-Level Camera Housing Design</h3>
+              <p class="project-subtitle">Research Hardware &amp; CAD</p>
+              <p>
+                Designed custom 3D-printable CAD housings for two board-level imaging systems used in engineering research.
+              </p>
+              <p>
+                Design considerations included PCB/component clearances, optical-post mounting, threaded hardware, camera
+                connectors, mechanical packaging, thermal considerations, and 3D-printability.
+              </p>
+              <div class="tags">
+                <span>Onshape</span>
+                <span>CAD</span>
+                <span>3D Printing</span>
+                <span>Mechanical Design</span>
+                <span>Hardware Integration</span>
+                <span>Optical Systems</span>
+              </div>
+              <div class="project-actions">
+                <a class="button secondary" href="https://cad.onshape.com/documents/14978b8b49e771a738d3633d/w/fc90b2ac61965e22ff9406db/e/545f190fb0be7c5b7c895531?renderMode=0&uiState=6a924f282b6dfbc1c6c452b8" target="_blank" rel="noopener">DMM CAD</a>
+                <a class="button secondary" href="https://cad.onshape.com/documents/aa96a75325149aa4b04cf2b6/w/72986a6a92b1b45e4bb39bc5/e/cea8e500917ed7cb2cf82b73?renderMode=0&uiState=6a924ed4b3b9f08b1d1b6ba3" target="_blank" rel="noopener">Alvium CAD</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card compact-project">
+            <div class="project-media neutral-media small-media image-panel dungeon-image-panel">
+              <img src="images/Dungeon_Crawler_RPG/game_terminal_preview.png" alt="Dungeon crawler RPG terminal gameplay screenshot" />
+            </div>
+
+            <div class="project-content">
+              <div class="project-kicker">Software engineering</div>
+              <h3>Dungeon Crawler RPG</h3>
+              <p class="project-subtitle">C++ Software Design Project</p>
+              <p>
+                Built a modular text-based dungeon crawler RPG in C++.
+              </p>
+              <ul class="project-list compact-list">
+                <li>Object-oriented C++ architecture</li>
+                <li>Inheritance and virtual functions</li>
+                <li>Runtime polymorphism</li>
+                <li>Combat system</li>
+                <li>Inventory system</li>
+                <li>STL containers</li>
+                <li>RAII</li>
+                <li>File I/O</li>
+                <li>Save/load system</li>
+                <li>Supports 20+ simultaneous game objects</li>
+                <li>Reduced implementation errors by approximately 25% through improved architecture and resource management</li>
+              </ul>
+              <div class="tags">
+                <span>C++</span>
+                <span>Object-Oriented Programming</span>
+                <span>STL</span>
+                <span>RAII</span>
+                <span>File I/O</span>
+                <span>Software Architecture</span>
+              </div>
+              <div class="project-actions">
+                <a class="button secondary" href="https://github.com/dyc394/cpp-dungeon-crawler" target="_blank" rel="noopener">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card compact-project">
+            <div class="project-media neutral-media small-media capmetro-gallery">
+              <figure class="project-image-figure">
+                <img src="images/capmetro/analysis.jpg" alt="CapMetro usage and demand analysis visualization" />
+              </figure>
+              <figure class="project-image-figure">
+                <img src="images/capmetro/usage.jpg" alt="CapMetro bikeshare ridership and service usage chart" />
+              </figure>
+            </div>
+
+            <div class="project-content">
+              <div class="project-kicker">Data analysis + consulting</div>
+              <h3>CapMetro Bikeshare Optimization</h3>
+              <p class="project-subtitle">Data Analysis &amp; Consulting Project</p>
+              <p>
+                Worked on a team analyzing CapMetro Bikeshare data to identify high-demand areas and recommend potential
+                station locations.
+              </p>
+              <ul class="project-list compact-list">
+                <li>Analyzed 10,000+ bike station data entries</li>
+                <li>Used Excel for analysis</li>
+                <li>Identified high-demand areas around Austin</li>
+                <li>Proposed new station locations intended to improve service around UT Austin</li>
+                <li>Recommendations considered service for 50,000+ UT Austin students</li>
+                <li>Converted technical analysis into recommendations for non-technical stakeholders</li>
+              </ul>
+              <div class="tags">
+                <span>Excel</span>
+                <span>Data Analysis</span>
+                <span>Data Visualization</span>
+                <span>Consulting</span>
+                <span>Transportation Analytics</span>
+              </div>
+              <div class="project-actions">
+                <a class="button secondary" href="https://docs.google.com/presentation/d/1v-m_kZdKyg7e0k-mu2mdskEEwRexjE1uPrQVOUhh52g/edit?usp=sharing" target="_blank" rel="noopener">View Presentation</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="section-number">02</span> Experience</p>
+          <h2>Background</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div>
+              <h3>Undergraduate Research Assistant</h3>
+              <p class="org">Nanomanufacturing &amp; Nanolithography Lab</p>
+            </div>
+            <p class="date">April 2026 – Present</p>
+            <p class="description">
+              Contributed to engineering research involving optical systems, automation, electrical characterization, and
+              custom hardware support in a nanomanufacturing environment.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div>
+              <h3>Corporate Chair</h3>
+              <p class="org">Student Engineering Council</p>
+            </div>
+            <p class="date">April 2026 – Present</p>
+            <p class="description">
+              Raised over $22k through corporate outreach and sponsorship strategy, supporting student engineering initiatives and industry partnerships.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div>
+              <h3>Logistics Director</h3>
+              <p class="org">Management Information Systems Association</p>
+            </div>
+            <p class="date">May 2026 – Present</p>
+            <p class="description">
+              Managed data and analytics for over 75 members, supporting logistics planning and student organization operations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="section-number">03</span> Skills</p>
+          <h2>Capabilities</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article>
+            <h3>Hardware</h3>
+            <p>Oscilloscopes, Multimeters, Soldering, PCB Design, GPIO, Optical Systems, Electrical Characterization</p>
+          </article>
+
+          <article>
+            <h3>Programming</h3>
+            <p>Python, C, C++, MATLAB, ARM Assembly</p>
+          </article>
+
+          <article>
+            <h3>Engineering Software</h3>
+            <p>LabVIEW, LTspice, KiCad</p>
+          </article>
+
+          <article>
+            <h3>Design / CAD</h3>
+            <p>Onshape, CAD</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow"><span class="section-number">04</span> Contact</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I am interested in internship opportunities related to semiconductor manufacturing, embedded systems, hardware,
+            electrical engineering, and related technical fields.
           </p>
-        </article>
-      </div>
-    </section>
+        </div>
 
-    <section id="skills" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Capabilities</p>
-        <h2>Skills</h2>
-      </div>
+        <div class="contact-links">
+          <a href="mailto:dyc394@my.utexas.edu" target="_blank" rel="noopener">dyc394@my.utexas.edu</a>
 
-      <div class="skills-grid">
-        <article>
-          <h3>Programming</h3>
-          <p>Python, MATLAB, Java, C/C++</p>
-        </article>
-        <article>
-          <h3>Engineering</h3>
-          <p>Electrical Characterization, Experimental Design, Semiconductor Manufacturing, Optics</p>
-        </article>
-        <article>
-          <h3>Design</h3>
-          <p>Onshape, CAD, 3D Printing, Mechanical Design</p>
-        </article>
-        <article>
-          <h3>Tools</h3>
-          <p>LabVIEW, Git, GitHub, Google Apps Script</p>
-        </article>
-      </div>
-    </section>
+          <a href="https://www.linkedin.com/in/danielchen05" target="_blank" rel="noopener">LinkedIn</a>
 
-    <section id="contact" class="section contact-section">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s connect.</h2>
-        <p>
-          I’m interested in engineering opportunities involving semiconductor manufacturing,
-          hardware, nanoelectronics, and multidisciplinary technical work.
-        </p>
-      </div>
+          <a href="https://github.com/dyc394" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </section>
+    </main>
 
-      <div class="contact-links">
-        <!-- Replace with your real email -->
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
+    <footer>
+      <p>Daniel Chen</p>
+    </footer>
 
-        <!-- Replace with your LinkedIn -->
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-
-        <!-- Replace with your GitHub if desired -->
-        <a href="https://github.com/dyc394" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Built by Daniel Chen</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
